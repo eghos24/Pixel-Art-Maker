@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h3>Andela Learning Community (ALC) #7DaysofCodeChallenge</h3>
+    <h1>Lab: Pixel Art Maker</h1>
+	<h4>Designed By Igbinedion Eghosa Oluwafemi</h4>
+	<p>Instuctions: <br/>Enter the Height and Width of the grid and click Submit<br/>
+					Select the color <br/>
+					click one a cell once to effect color and double click to undo color</P>
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWeight" name="width" min="1" value="1">
+        <input type="submit">
+		<button type="button" id="button">Reset</button>
+    </form>
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas"></table>
+    <script src="designs.js"></script>
+</body>
+</html>
